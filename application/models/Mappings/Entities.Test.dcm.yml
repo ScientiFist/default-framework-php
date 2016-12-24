@@ -1,0 +1,18 @@
+Entities\Test:
+  type: entity
+  table: test
+  uniqueConstraints:
+    id_index:
+      columns:
+        - id_test
+  fields:
+    id_test:
+      type: integer
+      unique: true
+      id: true
+      generator:
+        strategy: AUTO
+    test_text:
+      type: string
+      lenght: 50
+      nullable: true
